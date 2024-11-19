@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplexify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Simplexify</h1>
+        <form action="simplex.php" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="metodo">Método:</label>
+                <select id="metodo" name="metodo" class="form-control">
+                    <option value="simplex">Simplex</option>
+                    <option value="dual">Dual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="variaveis">Número de variáveis</label>
+                <input type="number" id="variaveis" name="variaveis" class="form-control" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="restricoes">Número de restrições</label>
+                <input type="number" id="restricoes" name="restricoes" class="form-control" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Continuar</button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
